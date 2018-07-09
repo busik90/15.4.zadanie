@@ -24,14 +24,14 @@ var zadanie = function zadanie(parametr, content) {
 var hello = 'Hello',
     world = 'World';
 
-zadanie('pierwsze', [hello + ' ' + world + '!']);
+zadanie('pierwsze', [hello + ' ' + world + '!'], 'yellow');
 
 // Zadanie drugie
 var multiply = function multiply(a, b) {
       return a * b;
 };
 
-zadanie('drugie', ['2 * 5 = ' + multiply(2, 5), '6 * 6 = ' + multiply(6, 6)]);
+zadanie('drugie', ['2 * 5 = ' + multiply(2, 5), '6 * 6 = ' + multiply(6, 6)], 'green');
 
 // Zadanie trzecie
 var average = function average() {
@@ -60,4 +60,4 @@ var oddArray = [1, 4, 'Iwona', false, 'Nowak'],
     lastName = oddArray[4];
 
 
-zadanie('pi\u0105te', [firstName + ' ' + lastName]);
+zadanie('pi\u0105te', [firstName + ' ' + lastName], 'magenta');

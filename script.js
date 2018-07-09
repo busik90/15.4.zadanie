@@ -18,13 +18,13 @@ const zadanie = (parametr, content, color = `white`) => {
 const hello = 'Hello',
       world = 'World';
 
-zadanie(`pierwsze`, [`${hello} ${world}!`]);
+zadanie(`pierwsze`, [`${hello} ${world}!`], `yellow`);
 
 // Zadanie drugie
 const multiply = (a, b) => a * b;
 
 zadanie(`drugie`, [`2 * 5 = ${multiply(2, 5)}`,
-                   `6 * 6 = ${multiply(6, 6)}`]);
+                   `6 * 6 = ${multiply(6, 6)}`], `green`);
 
 // Zadanie trzecie
 const average = (...numbers) => {
@@ -48,4 +48,4 @@ zadanie(`czwarte`, [average(...grades)], `red`);
 const oddArray = [1, 4, 'Iwona', false, 'Nowak'],
       [, , firstName, , lastName] = oddArray;
 
-zadanie(`piąte`, [`${firstName} ${lastName}`]);
+zadanie(`piąte`, [`${firstName} ${lastName}`], `magenta`);
