@@ -52,8 +52,7 @@ zadanie('trzecie', [average(1), average(1, 3), average(1, 3, 6, 6)]);
 // Zadanie czwarte
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 
-// Nie wiem jak przekazać tablicę, żeby działało bez zmieniania funkcji
-zadanie('czwarte', [average(grades)], 'red');
+zadanie('czwarte', [average.apply(undefined, grades)], 'red');
 
 // Zadanie piąte
 var oddArray = [1, 4, 'Iwona', false, 'Nowak'],
