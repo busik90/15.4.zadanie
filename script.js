@@ -28,12 +28,10 @@ zadanie(`drugie`, [`2 * 5 = ${multiply(2, 5)}`,
 
 // Zadanie trzecie
 const average = (...numbers) => {
-      let result = 0;
-      numbers.forEach(number => {
-            result += number;
-            return result;
-            }
-      )
+      let result = numbers.reduce(function (previousValue, currentValue) {
+            return previousValue + currentValue;
+      });
+
       return result / numbers.length;
 }
 
